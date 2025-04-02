@@ -1,0 +1,12 @@
+#theButton {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  color: red;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+#theButton::before {
+  content: "/2630";
+}

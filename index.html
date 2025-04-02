@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>09 Landscape & Lighting | Brian Day Dev</title>
+    <meta name="description" content="Brian Day's start file" />
+    <meta name="author" content="Brian Day" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--fav icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <img
+          src="./images/logo1x.png"
+          alt="logo"
+          width="50"
+          height="auto"
+          srcset="
+            ./images/logo1x.png 1x,
+            ./images/logo2x.png 2x,
+            ./images/logo3x.png 3x
+          "
+        />
+        <span
+          >Green Thumb Landscaping <br />
+          <a href="tel:+5555555555">(555) 555-5555</a>
+        </span>
+
+        <button id="theButton"></button>
+      </header>
+    </div>
+    <!--end headerwrapper-->
+
+    <div id="navWrapper">
+      <nav>
+        <ul id="primaryNav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="parent">
+            <a href="#">Services</a>
+            <ul>
+              <li><a href="#">Water features</a></li>
+              <li><a href="#">Construction</a></li>
+              <li><a href="#">Lighting</a></li>
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="#">Employees</a>
+            <ul>
+              <li><a href="#">Brian</a></li>
+              <li><a href="#">Karla</a></li>
+              <li><a href="#">Jerry</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end navWrapper-->
+
+    <div id="mainWrapper">
+      <main>
+        <h2>Best Landscapers in Utah</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="over">
+            <h3>Start your landscape makeover today!</h3>
+            <div class="quoteButton">
+              <a href="#">GET YOUR FREE QUOTE</a>
+            </div>
+          </div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="./images/lightSm.webp"
+                  media="(max-width:400px)"
+                />
+                <source
+                  srcset="./images/lightMed.webp"
+                  media="(max-width:800px)"
+                />
+                <img
+                  src="./images/lightLg.webp"
+                  alt="landscape lighting"
+                  width="1600px"
+                  height="700px"
+                />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="./images/wallSm.webp"
+                  media="(max-width:400px)"
+                />
+                <source
+                  srcset="./images/wallMed.webp"
+                  media="(max-width:800px)"
+                />
+                <img
+                  src="./images/wallLg.webp"
+                  alt="retaining wall"
+                  width="1600px"
+                  height="700px"
+                />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="./images/waterSm.webp"
+                  media="(max-width:400px)"
+                />
+                <source
+                  srcset="./images/waterMed.webp"
+                  media="(max-width:800px)"
+                />
+                <img
+                  src="./images/waterLg.webp"
+                  alt="landscape lighting"
+                  width="1600px"
+                  height="700px"
+                />
+              </picture>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--end slider-->
+
+        <h2>Why Choose Us?</h2>
+        <div class="services">
+          <section>
+            <h3>Friendly Service</h3>
+            <img
+              src="./images/friendly.webp"
+              alt="sod installation"
+              height="250px"
+              width="400px"
+              loading="lazy"
+            />
+            <img
+              src="./images/faces.png"
+              alt="mask"
+              width="400px"
+              height="250px"
+              loading="lazy"
+            />
+          </section>
+          <section>
+            <h3>Hard Working</h3>
+            <img
+              src="./images/working.webp"
+              alt="sod installation"
+              height="250px"
+              width="400px"
+              loading="lazy"
+            />
+            <img
+              src="./images/silhouettes.svg"
+              alt="mask"
+              width="400px"
+              height="250px"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <h2>Services</h2>
+        <div class="services">
+          <section>
+            <h3>Sod Installation</h3>
+            <img
+              src="./images/landscaper.webp"
+              alt="sod installation"
+              height="250px"
+              width="400px"
+              loading="lazy"
+            />
+            <img
+              src="./images/flowers.png"
+              alt="mask"
+              width="400px"
+              height="250px"
+              loading="lazy"
+            />
+          </section>
+          <section>
+            <h3>Construction</h3>
+            <img
+              src="./images/construction.webp"
+              alt="sod installation"
+              height="250px"
+              width="400px"
+              loading="lazy"
+            />
+            <img
+              src="./images/bricks.svg"
+              alt="mask"
+              width="400px"
+              height="250px"
+              loading="lazy"
+            />
+          </section>
+        </div>
+
+        <h2>What Our Customers Say</h2>
+        <div class="testi">
+          <section>
+            <img
+              src="./images/fieri.webp"
+              alt="customer 1"
+              width="200"
+              height="200"
+              loading="lazy"
+            />
+            <p>
+              "I asked for a fountain; they gave me a backyard masterpiece. Even
+              the ducks approve. Five stars!" <br />- Guy Fieri
+            </p>
+          </section>
+          <section>
+            <img
+              src="./images/devito.webp"
+              alt="customer 2"
+              width="200"
+              height="200"
+              loading="lazy"
+            />
+            <p>
+              "My backyard no longer tries to escape into my neighbor’s! Solid
+              wall, zero landslides—highly recommend!" <br />- Danny Devito
+            </p>
+          </section>
+        </div>
+        <!--end testimonials-->
+
+        <div class="masked"></div>
+      </main>
+    </div>
+
+    <!--end mainWrapper-->
+
+    <div id="footerWrapper">
+      <footer>
+        <div>
+          <section class="social">
+            <a href="https://www.facebook.com"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="https://www.twitter.com"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="https://www.linkedin.com"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="https://www.youtube.com"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </section>
+        </div>
+        <p class="legal">&copy; <span id="year"></span> &bull; Brian Day</p>
+      </footer>
+    </div>
+    <!--end footerWrapper-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js" type="module"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

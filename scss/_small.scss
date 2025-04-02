@@ -1,0 +1,179 @@
+/* prevent font size adjustments after orientation changes */
+html {
+  -moz-textsize-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/* apply natural box model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $fontColor;
+}
+
+//header
+
+#headerWrapper {
+  color: $secondaryColor;
+}
+
+header {
+  background-color: rgb(41, 41, 41);
+  display: grid;
+  grid-template-columns: 60px auto 44px;
+  column-gap: $gutter;
+  align-items: center;
+  padding: 1.5rem;
+  span {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    a {
+      font-size: 1rem;
+      padding-top: 50px;
+      color: $secondaryColor;
+      text-decoration: none;
+      &:hover {
+        color: $accentColorLt;
+      }
+    }
+  }
+}
+
+// nav
+
+// main
+.swiper {
+  position: relative;
+  .over {
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem 2rem 1rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    h3 {
+      color: $secondaryColor;
+      margin-bottom: 2rem;
+    }
+    a {
+      text-decoration: none;
+      background-color: rgb(255, 223, 41);
+      padding: 1rem;
+      border-radius: 1rem;
+      color: $primaryColor;
+    }
+    position: absolute;
+    z-index: 5;
+  }
+}
+.swiper,
+.swiper img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  padding-left: $gutter;
+}
+h3 {
+  margin-top: 0;
+}
+
+body {
+  background-color: $secondaryColor;
+}
+
+main {
+  h1 {
+    display: block;
+  }
+  h2 {
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+.services {
+  display: grid;
+  row-gap: 10px;
+  section {
+    h3 {
+      padding: 1rem;
+      margin: 0;
+      text-align: center;
+      background-color: $accentColor;
+      color: $secondaryColor;
+    }
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    img:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+.testi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+  section {
+    padding: 1rem;
+    img {
+      width: 100%;
+      height: auto;
+      clip-path: circle(50% at 50% 50%);
+    }
+  } //end section
+} //end testimonials
+
+// footer
+
+div#footerWrapper {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  footer {
+    padding: 2rem;
+    ion-icon {
+      padding-right: 12px;
+    }
+
+    section.social {
+      display: flex;
+      justify-content: center;
+      a {
+        color: white;
+        display: block;
+        font-size: 2rem;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        &:hover {
+          color: $accentColorLt;
+        }
+      }
+    }
+    p.legal {
+      font-weight: $boldWeight;
+      text-align: center;
+      font-size: 1.1rem;
+      color: $secondaryColor;
+    }
+  }
+}
