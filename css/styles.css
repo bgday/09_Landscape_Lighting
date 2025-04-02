@@ -459,20 +459,6 @@ div#footerWrapper footer {
 div#footerWrapper footer ion-icon {
   padding-right: 12px;
 }
-div#footerWrapper footer section.social {
-  display: flex;
-  justify-content: center;
-}
-div#footerWrapper footer section.social a {
-  color: white;
-  display: block;
-  font-size: 2rem;
-  margin: 0.5rem;
-  padding: 0.8rem;
-}
-div#footerWrapper footer section.social a:hover {
-  color: rgb(132, 179, 41);
-}
 div#footerWrapper footer p.legal {
   font-weight: 600;
   text-align: center;

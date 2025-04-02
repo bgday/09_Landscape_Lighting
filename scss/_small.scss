@@ -155,20 +155,6 @@ div#footerWrapper {
       padding-right: 12px;
     }
 
-    section.social {
-      display: flex;
-      justify-content: center;
-      a {
-        color: white;
-        display: block;
-        font-size: 2rem;
-        margin: 0.5rem;
-        padding: 0.8rem;
-        &:hover {
-          color: $accentColorLt;
-        }
-      }
-    }
     p.legal {
       font-weight: $boldWeight;
       text-align: center;
