@@ -45,17 +45,20 @@ header {
   //submenu
 
   li.parent ul {
-    background-color: darken($accentColorLt,10%);
+    background-color:white;
     list-style-type: none;
     padding: 0;
     position: absolute;
     left: -999rem;
     z-index: 2;
+    border: 1px solid rgba(0, 0, 0, 0.5);
   }
   li.parent ul li {
-    border-top: solid 1px rgba(0, 0, 0, 0.5);
+
+    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
     a {
       min-width: 150px;
+      color:$primaryColor;
     }
   }
   li.parent:hover ul {
