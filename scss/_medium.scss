@@ -45,7 +45,7 @@ header {
   //submenu
 
   li.parent ul {
-    background-color: $accentColorLt;
+    background-color: darken($accentColorLt,10%);
     list-style-type: none;
     padding: 0;
     position: absolute;
